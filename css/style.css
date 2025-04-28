@@ -504,16 +504,25 @@ nav ul li a:hover {
 }
 
 .image-placeholder {
-    width: 120px;
-    margin-left: 2rem;
+    width: 100%;
+    margin: 3rem 0;
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 0;
     display: flex;
     align-items: flex-start;
 }
 
 .image-placeholder img {
     width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-placeholder img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
 }
 
 .button {
